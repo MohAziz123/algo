@@ -1,0 +1,23 @@
+ALGORITHM 
+VAR
+    c : CHAR :="";
+    countchar,countVo,countWor : INTEGER :=0;
+BEGIN
+    REPEAT
+        Write("donner un char");
+        Read(c);
+    countchar := countChar + 1 ;
+    IF (c =" ")THEN
+        countWor := countWor +1;
+    END_WHILE
+    IF (c = "a" OR c ="e" OR c="i" OR c="y" OR c= "o" OR c="u" OR c="A" OR c="E" OR c="I" OR c="Y" OR c="O" OR c="U" ) THEN
+       countVo := countVo +1;
+    END_IF
+
+
+UNTIL (c = ".")
+
+    Write("num char",countchar);
+    Write("num Vo",countVo);
+    Write("Num W",countWor+1);
+END
